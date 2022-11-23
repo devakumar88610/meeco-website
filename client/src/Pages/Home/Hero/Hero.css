@@ -1,0 +1,14 @@
+.hero-container{
+    width: 100%;
+    height: 600px;
+    background-color: #21367F;
+    align-items: center;
+
+
+}
+
+.hero-title{
+    color: #fff;
+    font-weight: 600;
+    
+}

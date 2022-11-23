@@ -1,0 +1,19 @@
+.footer__container {
+    background-color: var(--gray-1000);
+    padding: 50px 0;
+    border-top: 1px solid rgba(275, 275, 275, 0.2);
+}
+
+.footer__title {
+    display: block;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.footer__title:hover {}
+
+.footer__add {
+    color: #fff;
+    font-size: 18px;
+}
