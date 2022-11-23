@@ -1,12 +1,9 @@
-import DigitalTime from "../Practices/DigitalTime";
-import Product from "../Practices/Product";
+
 
 const Services = () => {
   return (
     <div>
-      {/* <h3 className='text-center mt-5'>Services</h3> */}
-      <DigitalTime />
-      <Product />
+      <h3 className='text-center mt-5'>Services Page</h3>
     </div>
   );
 };

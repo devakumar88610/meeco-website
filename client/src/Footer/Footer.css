@@ -6,7 +6,7 @@
 
 .footer__title {
     display: block;
-    color: var(--secondary-color);
+    color: #fff;
     margin-bottom: 30px;
     font-size: 20px;
 }

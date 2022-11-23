@@ -40,7 +40,7 @@ function NavigationBarOne() {
         </div>
       </nav>
 
-      <nav className='navbar navbar-expand-lg navbar-light bg-light sticky-nav'>
+      <nav className='navbar navbar-expand-lg navbar-light bg-white sticky-nav'>
         <div className='container py-2'>
           <Link className="navbar-brand pointer" to='/'>
             <img src={Logo} alt='Meeco' width={200} />
