@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73bdf119.css",
+    "main.js": "/static/js/main.d8865a9e.js",
+    "static/media/Sileder-one.jpg": "/static/media/Sileder-one.7aa5f784ca2159973fff.jpg",
+    "static/media/Silder-two.jpg": "/static/media/Silder-two.a09d523d5fee7690c960.jpg",
+    "static/media/Slider-three.jpg": "/static/media/Slider-three.a4d78a76433abb6b7d2e.jpg",
+    "static/media/meeco-logo-white.svg": "/static/media/meeco-logo-white.d53cbf975108f9675893421d52e34ac7.svg",
+    "static/media/Logo.svg": "/static/media/Logo.9c0af778a517fb20646ff32e32ae2adb.svg",
+    "index.html": "/index.html",
+    "main.73bdf119.css.map": "/static/css/main.73bdf119.css.map",
+    "main.d8865a9e.js.map": "/static/js/main.d8865a9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73bdf119.css",
+    "static/js/main.d8865a9e.js"
+  ]
+}

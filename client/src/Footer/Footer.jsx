@@ -5,7 +5,7 @@ import footerLogo from '../Images/meeco-logo-white.svg'
 
 function Footer() {
   return (<>
-    <div className='footer__container'>
+    <div className='footer__container bg__dark'>
       <div className='container '>
         <div className='row'>
           <div className='col-md-3'>
@@ -36,7 +36,7 @@ function Footer() {
       </div>
     </div>
 
-    <div className="footer__container py-4">
+    <div className="footer__container bg__dark py-4">
       <div className="container text-white">Copyrights <a href="/">copyrights meeco.org</a></div>
     </div>
   </>

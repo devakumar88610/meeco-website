@@ -14,14 +14,12 @@ function NavigationBarOne() {
     <>
       {open && <Searchbar />}
       <nav
-        style={{ backgroundColor: "#0541a8" }}
-        className='navbar navbar-expand-lg text-white'
+        className='navbar navbar-expand-lg text-white bg__primary'
       >
         <div className='container'>
-          <div className='navbar-brand' style={{ fontSize: "18px" }}>
+          <p className='navbar-brand' style={{ fontSize: "18px" }}>
             Welcome to Meeco
-          </div>
-
+          </p>
           <div className='navbar-nav'>
             {SocialMedia.map(({ icon, link }, index) => {
               return (
@@ -59,13 +57,7 @@ function NavigationBarOne() {
               {navMenu.map(({ name, path }, index) => {
                 return (
                   <li key={index}>
-                    <Link
-                      style={{ fontWeight: 500, fontSize: 18 }}
-                      className='nav-link px-3'
-                      to={path}
-                    >
-                      {name}
-                    </Link>
+                    <Link className='nav-link px-3' to={path}> {name}</Link>
                   </li>
                 );
               })}
@@ -78,7 +70,7 @@ function NavigationBarOne() {
             <i class='fa-sharp fa-solid fa-magnifying-glass'></i>
           </button>
 
-          <button type='submit' className='button__nav'>
+          <button type='submit' className='btn__primary'>
             Get in Touch
           </button>
         </div>

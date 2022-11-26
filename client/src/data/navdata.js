@@ -19,6 +19,10 @@ export const navMenu = [
     name: "Contact",
     path: "contact",
   },
+  {
+    name: "Help",
+    path: "help",
+  },
 ];
 
 export const SocialMedia = [

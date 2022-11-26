@@ -23,6 +23,21 @@
   z-index: 10;
 }
 
+.bg-white {
+  box-shadow: var(--box-shadow-gray);
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(15px);
+}
+
+.nav-link {
+  font-size: var(--font-small);
+  font-weight: 500;
+}
+
+.nav-link:active {
+  color: var(--primary-color) !important;
+}
+
 .button__nav {
   color: #fff;
   background: var(--primary-color);

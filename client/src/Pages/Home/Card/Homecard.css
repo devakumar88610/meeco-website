@@ -1,0 +1,39 @@
+.card {
+    border-radius: 20px !important;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px)
+}
+
+@keyframes color-change {
+    from {
+        color: purple;
+    }
+
+    25% {
+        color: orange;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    to {
+        color: yellow;
+    }
+}
+
+.color {
+    color: purple;
+    animation-name: color-change;
+    animation-duration: 5s;
+}
