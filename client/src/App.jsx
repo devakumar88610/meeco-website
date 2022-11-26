@@ -18,7 +18,8 @@ export class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <NavigationBar />
+        <NavigationBar
+        />
 
         <Routes>
           <Route index element={<Home />} />

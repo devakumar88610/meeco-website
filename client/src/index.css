@@ -15,7 +15,7 @@ body {
   --gray-600: #9a9a9a;
   --gray-800: #292929;
   --gray-1000: #0b0c0e;
-  --transition: all 0.5s ease;
+  --transition: all 0.3s ease;
   --padding: 10px;
   --marging: 10px;
   --font-family: 'poppins', sans-serif;
@@ -23,13 +23,39 @@ body {
   --font-medium: 22px;
   --font-large: 28px;
   --font-xl: 34px;
-  --color-gradient: linear-gradient(to right, #21367F, #0298CA; );
-  --box-shadow-primary: 0px 15px 20px rgba(2, 152, 202, 0.4);
+  --color-gradient: linear-gradient(145deg, #0541a8, #04b8e5);
+  --box-shadow-primary: 0px 10px 20px rgba(4, 184, 229, 0.5);
+  --box-shadow-gray: 0 1px 20px rgba(0, 0, 0, 0.1);
 }
+
+.bg__primary {
+  background-color: var(--primary-color);
+}
+
+.bg__secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg__dark {
+  background-color: var(--gray-1000);
+}
+
+.bg__gradient {
+  background: var(--color-gradient);
+}
+
+.text__primary {
+  color: var(--primary-color) !important;
+}
+
+.text__secondary {
+  color: var(--secondary-color);
+}
+
 
 /* Button Group Primary*/
 
-.button__primary {
+.btn__primary {
   color: #fff;
   background: var(--primary-color);
   padding: 8px 20px;
@@ -38,7 +64,7 @@ body {
   transition: var(--transition);
 }
 
-.button__primary:hover {
+.btn__primary:hover {
   background-color: var(--secondary-color);
   color: #fff;
   box-shadow: var(--box-shadow-primary);
@@ -69,6 +95,7 @@ body {
   font-size: 18px;
   outline: none;
   border: none;
+  margin: 0 15px;
   background-color: transparent;
 }
 
