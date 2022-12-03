@@ -1,0 +1,8 @@
+POST http://127.0.8.6:8080/signup/createuser
+Content-Type: application/json
+
+{
+    "username":"dev Kumar",
+    "email": "dev@mail.com",
+    "password":"dev123",
+}

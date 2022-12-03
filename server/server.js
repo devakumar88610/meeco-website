@@ -8,7 +8,7 @@ import routeUrl from './Router/signup_user_router.js'
 const app = express()
 
 // dotenv configure
-dotenv.config({path:'./Config/config.env'})
+dotenv.config({ path: './Config/config.env' })
 const port = process.env.PORT
 const hostName = process.env.HOST_NAME
 const mongoDb_url = process.env.MONGO_DB_URL
@@ -17,20 +17,22 @@ app.use(cors())
 app.use(morgan("tiny"))
 
 app.use(express.json())
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 
-app.use('/app', routeUrl)
+app.use('/signup', routeUrl)
 
 app.get("/", (req, res) => {
     res.send('<h1>Welcome to Meeco</h1>')
 })
 
 mongoose.connect(mongoDb_url)
-    .then((res)=>{
-        console.log("mongo connected success");
+    .then((res) => {
+        console.log("mongoDB connected successfully");
     })
-    
+    .catch((err) => {
+        console.log(err);
+    })
 
-app.listen(port, hostName, ()=>{
+app.listen(port, hostName, () => {
     console.log(`server is running on http://${hostName}:${port}`);
 })

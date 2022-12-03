@@ -13,15 +13,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    confirmpassword: {
-        type: String,
-        required: true
-    },
     date: {
         type: Date,
         default: Date.now
     }
-})
+});
 
 const signupUserTem = mongoose.model('user', userSchema)
 export default signupUserTem

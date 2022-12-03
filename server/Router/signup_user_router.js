@@ -3,22 +3,32 @@ import signupUserTem from '../Model/signup_user.js'
 
 const router = express.Router()
 
-router.post("/signup", (req, res)=>{
-    const signupUser = new signupUserTem({
-        username: req.body.username,
-        email: req.body.email,
-        password: req.body.password,
-        confirmpassword: req.body.confirmpassword
-    })
-    signupUser.save()
-    .then((data)=>{
-        response.json(data)
-        console.log("save success");
-    })
-    .catch((err)=>{
-        response.json(err)
-        console.log('error');
-    })
+// URL:http://127.0.8.6:8080/signup/createuser
+
+router.post("/createuser", async (req, res) => {
+    try {
+        let signupUser = {
+            username: req.body.username,
+            email: req.body.email,
+            password: req.body.password
+        }
+        let user = await signupUserTem.findOne({ email: signupUser.email })
+        if (user) {
+            return res.status(401).json({
+                msg: "email is alredy exists"
+            })
+        }
+        user = signupUserTem(signupUser)
+        console.log(user)
+        user = await user.save()
+        res.status(200).json({
+            msg: "created succesfully",
+            user: user
+        })
+    }
+    catch (err) {
+        console.log(err);
+    }
 })
 
 export default router;
