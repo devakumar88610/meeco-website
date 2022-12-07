@@ -24,7 +24,6 @@ const Homecard = () => {
                     })}
                 </div>
             </div>
-            <h1 className='color'>Hello world</h1>
         </>
     )
 }

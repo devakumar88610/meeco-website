@@ -1,34 +1,28 @@
 import express from 'express'
 import signupUserTem from '../Model/signup_user.js'
 
-const router = express.Router()
+const router = express.Router();
 
-// URL:http://127.0.8.6:8080/signup/createuser
+// URL:http://localhost:8080/signup/createuser
 
 router.post("/createuser", async (req, res) => {
     try {
         let signupUser = {
-            username: req.body.username,
+            name: req.body.name,
             email: req.body.email,
-            password: req.body.password
+            mobile: req.body.mobile,
+            message: req.body.message
         }
-        let user = await signupUserTem.findOne({ email: signupUser.email })
-        if (user) {
-            return res.status(401).json({
-                msg: "email is alredy exists"
-            })
-        }
-        user = signupUserTem(signupUser)
+        let user = await signupUserTem(signupUser)
         console.log(user)
         user = await user.save()
         res.status(200).json({
-            msg: "created succesfully",
-            user: user
-        })
+            msg: "user created succesfully",
+        });
     }
     catch (err) {
         console.log(err);
     }
-})
+});
 
 export default router;

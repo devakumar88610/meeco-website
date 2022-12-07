@@ -9,9 +9,8 @@ const app = express()
 
 // dotenv configure
 dotenv.config({ path: './Config/config.env' })
-const port = process.env.PORT
-const hostName = process.env.HOST_NAME
-const mongoDb_url = process.env.MONGO_DB_URL
+let port = process.env.PORT
+let mongoDb_url = process.env.MONGO_DB_URL_LOCAL
 
 app.use(cors())
 app.use(morgan("tiny"))
@@ -19,11 +18,11 @@ app.use(morgan("tiny"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use('/signup', routeUrl)
-
 app.get("/", (req, res) => {
     res.send('<h1>Welcome to Meeco</h1>')
 })
+
+app.use('/signup', routeUrl)
 
 mongoose.connect(mongoDb_url)
     .then((res) => {
@@ -33,6 +32,6 @@ mongoose.connect(mongoDb_url)
         console.log(err);
     })
 
-app.listen(port, hostName, () => {
-    console.log(`server is running on http://${hostName}:${port}`);
+app.listen(port, () => {
+    console.log(`server is running on http://localhost:${port}`);
 })

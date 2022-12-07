@@ -1,0 +1,22 @@
+.header__one {
+  display: flex;
+  color: #fff;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.sm__icons__group {
+  justify-content: end;
+}
+
+.sm__icon {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 8px;
+  padding: 3px 2px;
+  transition: all 0.5s ease;
+}
+
+.sm__icon:hover {
+  color: var(--secondary-color);
+}

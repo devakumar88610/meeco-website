@@ -1,25 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
-
-import NavigationBar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
-
 import React, { Component } from 'react'
-
 import Services from "./Pages/Services";
 import About from "./Pages/About";
 import Pricing from "./Pages/Pricing";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home/Home";
+import NavigationBar from "./Navbar/Header 2";
 
 
 export class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <NavigationBar
-        />
+        <NavigationBar />
 
         <Routes>
           <Route index element={<Home />} />

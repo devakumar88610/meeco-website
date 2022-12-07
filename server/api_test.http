@@ -1,5 +1,5 @@
-POST http://127.0.8.6:8080/signup/createuser
-Content-Type: application/json
+POST http://localhost:8080/signup/createuser
+
 
 {
     "username":"dev Kumar",

@@ -1,0 +1,44 @@
+/* Navbar two */
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-link {
+    font-size: var(--font-small);
+    font-weight: 500;
+    color: var(--gray-1000) !important;
+}
+
+.nav-link:active {
+    color: var(--primary-color) !important;
+}
+
+.hire__btn {
+    color: #fff;
+    background: var(--primary-color);
+    padding: 8px 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.hire__btn:hover {
+    background-color: #fff;
+    color: var(--gray-1000);
+    border: 2px solid var(--primary-color);
+}
+
+@media (max-width: 1020px) {
+    .nav-link {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar-brand img {
+        width: 150px !important;
+    }
+}

@@ -15,11 +15,11 @@ body {
   --gray-600: #9a9a9a;
   --gray-800: #292929;
   --gray-1000: #0b0c0e;
-  --transition: all 0.3s ease;
+  --transition: all 0.3s ease-in-out;
   --padding: 10px;
   --marging: 10px;
   --font-family: 'poppins', sans-serif;
-  --font-small: 18px;
+  --font-small: 16px;
   --font-medium: 22px;
   --font-large: 28px;
   --font-xl: 34px;
@@ -52,6 +52,9 @@ body {
   color: var(--secondary-color);
 }
 
+.shadow_gray {
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
 
 /* Button Group Primary*/
 

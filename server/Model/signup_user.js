@@ -1,23 +1,23 @@
 import mongoose from 'mongoose';
 
-const userSchema = new mongoose.Schema({
-    username: {
+let userSchema = new mongoose.Schema({
+    name: {
         type: String,
-        required: true
+
     },
     email: {
         type: String,
-        required: true
+
     },
-    password: {
+    mobile: {
         type: String,
-        required: true
+
     },
-    date: {
+    message: {
         type: Date,
         default: Date.now
     }
 });
 
-const signupUserTem = mongoose.model('user', userSchema)
+let signupUserTem = mongoose.model('user', userSchema)
 export default signupUserTem
